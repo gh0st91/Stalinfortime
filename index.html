@@ -23,15 +23,23 @@
     #right{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-right;
         margin-top: 0px;
+        margin-right: auto;
+        margin-left: 200px;
     }
     #lines{
         color: yellow;
-        margin-right: 70px;
-        margin-top: 50px;
+        margin-right: auto;
+        margin-top: 0px;
         background-color: red;
         padding: 5px;
+    }
+    #picright{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 0px;
     }
     #picture{
         margin-top: 200px;
@@ -43,7 +51,10 @@
     <body>
      <div id="leftvid">
         <button id="button">Click to watch me fall</button>  
-        <iframe id="video" width="560" height="315" src="https://youtu.be/embed/JhfwI3gIkzA?start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JhfwI3gIkzA?start=19" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <p>Till 45</p>
+        </div>
             <!--<a id="video" href="https://youtu.be/JhfwI3gIkzA?t=19" target="new_tab">Till 45</a>-->
 
 </div>
@@ -53,7 +64,9 @@
     <p> Remove another letter, the opposite of a blur</p>
     <p>Sometimes we are captured and sometimes we are hung</p>
 </div>
+</div>
 <div id="picture">
+<div id="picright">
     <img src="dwayneanddavid.jpg">
     <p>Looking for another one</p>
 </div>
